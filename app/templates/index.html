@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block main %}
+{% if books %}
+<div class="">
+{% for book in books %}
+  <a href="{% url 'book' book.id %}" class="">
+    <p>{{book.title}}</p>
+    <p>{{book.author}}</p>
+    <p>{{book.yearOfRel}}</p>
+    <p>{{book.genre}}</p>
+    <p>{{book.category}}</p>
+    <img width="300" src="{{book.photoPreview.url}}" alt="preview">
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<h1>No books</h1>
+{% endif %}
+{% endblock %}

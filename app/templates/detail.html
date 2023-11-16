@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="">
+  <div class="">
+    <p>{{book.title}}</p>
+    <p>{{book.author}}</p>
+    <p>{{book.yearOfRel}}</p>
+    <p>{{book.genre}}</p>
+    <p>{{book.category}}</p>
+    <img width="300" src="{{book.photoPreview.url}}" alt="preview">
+  </div>
+</div>
+{% endblock %}

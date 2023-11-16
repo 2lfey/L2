@@ -1,0 +1,4 @@
+# logpass
+
+admin
+admin
